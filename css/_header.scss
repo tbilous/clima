@@ -1,3 +1,4 @@
+//HEADER
 .header {
   background-position-y: 100%;
   background-position-x: center;
@@ -5,7 +6,7 @@
   @media only screen and(max-width: $screen-sm-min) {
     background-image: url("../img/header-bg-lowres.jpg");
     background-size: cover;
-    font-size: 10px;
+    //font-size: 10px;
   }
   @media only screen and(min-width: $screen-sm-min) {
     background-image: url("../img/header-bg-hires.jpg");
@@ -34,7 +35,9 @@
   }
   .navbar-nav {
     @media only screen and(min-width: $screen-md-min) {
-      margin-left: 15px;
+      .clock-module{
+        text-align: center;
+      }
     }
     li {
       a {
@@ -49,7 +52,7 @@
     font-weight: 700;
     color: white;
   }
-  h1{
+  h1 {
     margin-top: 2.05em;
   }
   h2{
@@ -58,10 +61,10 @@
     margin-bottom: .7em;
   }
   .banner{
-    display: inline-block;
+/*    display: inline-block;
     background-color: $brand-warning;
     font-size: 1.5em;
-    padding: .25em 3em;
+    padding: .25em 3em;*/
     margin-bottom: 1.8em;
   }
 }
@@ -100,7 +103,7 @@
         top: 2px;
       }
       &.mts::before{
-        background-position-y: -25px;
+        background-position: 0 -25px;
       }
     }
   }

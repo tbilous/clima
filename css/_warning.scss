@@ -1,0 +1,48 @@
+//WARNING
+//BLOCK-2
+.warning{
+  text-align: center;
+  position: relative;
+  //min-height: 239px;
+  background-position: center;
+  color: white;
+  padding-bottom: 1.3em;
+  @media only screen and(max-width: $screen-sm-min) {
+    background-image: url("../img/black-bg-lowres.jpg");
+  }
+  @media only screen and(min-width: $screen-sm-min) {
+    background-image: url("../img/black-bg-hires.jpg");
+  }
+  &::after{
+    content: "";
+    width: 59px;
+    height: 29px;
+    background: url("../img/icons/warning-arrow.png") no-repeat center;
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    margin-left: -34px;
+  }
+  h2{
+    font-size: 3em;
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+  .subheader{
+    margin: 0 auto;
+    max-width: 640px;
+    font-size: 1.5em;
+    display: block;
+  }
+  .banner{
+    padding: .4em .5em;
+    margin-top: .4em;
+  }
+  .choose {
+    font-size: 1.5em;
+    margin-top: .8em;
+  }
+
+}
+
+//END BLOCK-2
