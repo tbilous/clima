@@ -1,8 +1,11 @@
 .header {
-  background-position-y: 30%;
-  background-size: cover;
+  background-position-y: 100%;
+  background-position-x: center;
+  padding-bottom: 1em;
   @media only screen and(max-width: $screen-sm-min) {
     background-image: url("../img/header-bg-lowres.jpg");
+    background-size: cover;
+    font-size: 10px;
   }
   @media only screen and(min-width: $screen-sm-min) {
     background-image: url("../img/header-bg-hires.jpg");
@@ -10,23 +13,98 @@
   .navbar {
     border: none;
   }
-  .navbar-header{
+  .navbar-header {
 
   }
-  .navbar-brand{
+  .navbar-header{
+    @media only screen and(max-width: $screen-lg-min) and(min-width: $screen-md-min) {
+      width: 30%;
+    }
+  }
+  .navbar-brand {
     text-align: center;
     font-weight: 300;
     font-size: 1em;
     padding-top: 0;
     padding-bottom: 0;
-    letter-spacing: .5px;
+    @media only screen and(max-width: $screen-sm-min) {
+      width: 80%;
+    }
+
   }
-  .navbar-nav{
-    li{
-      a{
+  .navbar-nav {
+    @media only screen and(min-width: $screen-md-min) {
+      margin-left: 15px;
+    }
+    li {
+      a {
         text-transform: uppercase;
-        //padding: 39px .4em 31px;
+        @media only screen and(min-width: $screen-md-min) {
+          padding: 39px .4em 31px;
+        }
       }
     }
+  }
+  h1, h2, .banner{
+    font-weight: 700;
+    color: white;
+  }
+  h1{
+    margin-top: 2.05em;
+  }
+  h2{
+    font-size: 1.6em;
+    margin-top: .7em;
+    margin-bottom: .7em;
+  }
+  .banner{
+    display: inline-block;
+    background-color: $brand-warning;
+    font-size: 1.5em;
+    padding: .25em 3em;
+    margin-bottom: 1.8em;
+  }
+}
+.heading-logo{
+  display: inline-block;
+  background: url("../img/header-logo.png") no-repeat center;
+  background-size: 100%;
+  width: 11em;
+  margin-top: .5em;
+  .spacer{
+    padding-top: 24.5%;
+  }
+}
+.phone-side-block{
+  width: 167px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  ul{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    li{
+      position: relative;
+      font-size: 1.4em;
+      line-height: 1.2;
+      text-align: right;
+      &::before{
+        content: "";
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        background-image: url("../img/icons/cell-icons.png");
+        left: -30px;
+        top: 2px;
+      }
+      &.mts::before{
+        background-position-y: -25px;
+      }
+    }
+  }
+  .btn{
+    width: 100%;
   }
 }

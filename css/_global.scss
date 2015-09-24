@@ -43,4 +43,46 @@
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
+$orange-color: #ff7100;
+.orange{
+  color: $orange-color;
+}
+.relative{
+  position: relative;
+}
+.spacer{
+  display: inline-block;
+  height: 0;
+  font-size: 0;
+}
 
+.counter{
+  padding-top: 1em;
+  min-height: 380px;
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,.2);
+  .counter-header{
+    text-align: center;
+    .heading{
+      color: $orange-color;
+      font-size: 3em;
+      margin: 0;
+    }
+  }
+  .subheader{
+    font-size: 1.7em;
+    line-height: .8;
+    margin-top: .5em;
+  }
+  del{
+    font-weight: 300;
+  }
+  .low-price{
+    margin-left: 5px;
+    font-size: 170%;
+    font-weight: 700;
+  }
+
+}
