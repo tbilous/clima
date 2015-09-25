@@ -8,7 +8,13 @@
     border: 1px solid $gray-light;
     background-color: white;
     position: relative;
-    padding: 20px 34px;
+    padding: 20px 25px;
+  }
+  .description{
+    .product-review{
+      margin-top: 3.2em;
+      margin-bottom: 5em;
+    }
   }
   .item-header{
     font-size: 1.15em;
@@ -49,6 +55,20 @@
       top: 39px;
       left: -16px;
     }
+  }
+  .product-review{
+    display: table;
+  }
+
+  .review-row{
+    display: table-row;
+  }
+  .review-cell:nth-child(even){
+    padding-left: 25px;
+  }
+  .review-cell{
+    display: table-cell;
+    padding: 15px 0;
   }
 }
 
