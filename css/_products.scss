@@ -3,5 +3,53 @@
 .products-section{
   padding-top: 4em;
   padding-bottom: 3em;
+  .description, .product{
+    min-height: 570px;
+    border: 1px solid $gray-light;
+    background-color: white;
+    position: relative;
+    padding: 20px 34px;
+  }
+  .item-header{
+    font-size: 1.15em;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .product-img{
+    position: relative;
+    max-height: 265px;
+    max-width: 279px;
+    margin: 0 auto 0 20px;
+
+  }
+  .square, .rectangle{
+    box-shadow: 0 0 0 1px red;
+  }
+  .square{
+    background: url("../img/goods/square.png") no-repeat center;
+    background-size: 100%;
+    .spacer{
+      padding-top: 100%;
+    }
+    .numbers{
+      top: -14px;
+      left: -14px;
+    }
+  }
+  .rectangle{
+    background-size: 100%;
+    .spacer{
+      padding-top: 100%;
+    }
+    background: url("../img/goods/rectangle.png") no-repeat center;
+    .numbers{
+      top: 39px;
+      left: -16px;
+    }
+  }
 }
+
 //END PRODUCTS
