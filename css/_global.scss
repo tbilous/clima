@@ -37,6 +37,7 @@
 }
 
 $orange-color: #ff7100;
+$red-color: #ff002a;
 
 body, html {
   position: relative;
@@ -81,6 +82,12 @@ h1, h2, .banner {
 
 .orange {
   color: $orange-color;
+}
+.red{
+  color: $red-color;
+}
+.red-bg{
+  background-color: $red-color;
 }
 
 .black {
@@ -153,7 +160,35 @@ h1, h2, .banner {
     background-position: -387px 0;
   }
 }
-
+.hit{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 103px;
+    height: 37px;
+    top: 50%;
+    left: -15px;
+    margin-top: -18px;
+    background: url("../img/icons/hit.png") no-repeat;
+  }
+}
+.in-stock{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-size: 1.2em;
+  color: #15cb05;
+  font-weight: 700;
+  &::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background: url("../img/icons/icons.png") 0px -88px;
+    left: -22px;
+    top: 5px;
+  }
+}
 .counter {
   padding-top: 1em;
   min-height: 380px;

@@ -1,22 +1,44 @@
 //BLOCK-2
 //PRODUCTS
-.products-section{
+.products-section {
+  .product-header-line{
+    height: 8px;
+    background: url("../img/product-line.png") no-repeat center;
+    margin-top: 3em;
+    margin-bottom: .6em;
+  }
   padding-top: 4em;
   padding-bottom: 3em;
-  .description, .product{
-    min-height: 570px;
-    border: 1px solid $gray-light;
+  background: url("../img/block-prod-bg.jpg") repeat;
+  .product-header{
+    margin-bottom: 3.5em;
+  }
+  .description, .product {
+    padding-top: 20px;
+    //min-height: 570px;
+    min-height: 41em;
+    border: 1px solid $gray-lighter;
     background-color: white;
     position: relative;
-    padding: 20px 25px;
+    max-width: 360px;
+    margin: 0 auto 1em;
   }
-  .description{
-    .product-review{
+  .product-wrapper{
+    padding: 0 25px;
+  }
+  .description {
+    .product-review {
       margin-top: 3.2em;
       margin-bottom: 5em;
     }
+    &.horizontal{
+      max-width: 100%;
+    }
   }
-  .item-header{
+  .in-stock{
+    margin-top: .5em;
+  }
+  .item-header {
     font-size: 1.15em;
     text-transform: uppercase;
     text-align: center;
@@ -24,51 +46,85 @@
     font-weight: 700;
     margin-top: 0;
   }
-  .product-img{
+  .product-img {
     position: relative;
     max-height: 265px;
     max-width: 279px;
-    margin: 0 auto 0 20px;
-
+    margin: 0 auto;
   }
-  .square, .rectangle{
+  .square, .rectangle {
     box-shadow: 0 0 0 1px red;
-  }
-  .square{
+  } //TEMP
+  .square {
     background: url("../img/goods/square.png") no-repeat center;
     background-size: 100%;
-    .spacer{
+    .spacer {
       padding-top: 100%;
     }
-    .numbers{
+    .numbers {
       top: -14px;
       left: -14px;
     }
   }
-  .rectangle{
+  .rectangle {
     background-size: 100%;
-    .spacer{
+    .spacer {
       padding-top: 100%;
     }
     background: url("../img/goods/rectangle.png") no-repeat center;
-    .numbers{
+    .numbers {
       top: 39px;
       left: -16px;
     }
   }
-  .product-review{
+  .product-review, .product-details {
     display: table;
+    font-size: .9em;
   }
-
-  .review-row{
+  .product-details{
+    margin-top: 1em;
+    margin-bottom: 1.4em;
+  }
+  .review-row, .product-details-row {
     display: table-row;
   }
-  .review-cell:nth-child(even){
+  .review-cell:nth-child(even), .product-details-cell:nth-child(even) {
     padding-left: 25px;
   }
-  .review-cell{
+  .review-cell, .product-details-cell {
     display: table-cell;
+  }
+  .review-cell{
     padding: 15px 0;
+  }
+  /*  .delivery-time{
+      font-size: 1.2em;
+    }*/
+  .status-block {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .product-price{
+    text-align: center;
+  }
+  .old-price{
+    font-size: 1.5em;
+    color: $gray-light;
+  }
+  .new-price{
+    color: $red-color;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .buy-now{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.3em;
+    padding: 0;
+    height: 3em;
+    line-height: 3em;
   }
 }
 
