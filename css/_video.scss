@@ -1,0 +1,45 @@
+.video-review {
+  padding-top: 6em;
+  padding-bottom: 5em;
+  margin-bottom: 0;
+  position: relative;
+  .embed {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .video-review-wrapper {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .video-header {
+    margin-top: 0;
+    font-weight: 700;
+  }
+  ul {
+    padding-left: 2.5em;
+  }
+  li {
+    padding: 5px 0;
+  }
+  .in-stock {
+    display: block;
+    text-align: left;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 400;
+    &::before {
+      top: 50%;
+      margin-top: -9px;
+      left: -31px;
+    }
+  }
+}

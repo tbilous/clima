@@ -1,0 +1,66 @@
+//BLOCK-4
+.query-section {
+  min-height: 500px;
+  background: url("../img/query-bg.jpg") repeat;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  h2 {
+    margin-bottom: 2em;
+  }
+  .tab-content {
+    background-color: white;
+    min-height: 200px;
+  }
+  .nav-tabs {
+    font-size: 1.2em;
+    border: none;
+    li {
+      margin-bottom: 2em;
+      float: none;
+      position: relative;
+      background-size: 100%;
+      background-color: white;
+      &.active {
+        border: none;
+        a {
+          border: none;
+        }
+      }
+      &.active::before {
+        content: "";
+        background: url('../img/icons/icons.png') no-repeat 0 -53px;
+        width: 14px;
+        height: 25px;
+        position: absolute;
+        right: -23px;
+        top: 50%;
+        margin-top: -7px;
+      }
+      &::after {
+        content: "";
+        width: 15px;
+        height: 18px;
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+        background: url("../img/nav-tab-arrow.png") no-repeat;
+      }
+    }
+    a {
+      //background-color: transparent;
+      padding: 1em;
+      border: none;
+      color: black;
+      &:hover {
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+  .tab-pane {
+    padding: 1.1em 2.4em;
+    font-size: 1.2em;
+    line-height: 2;
+    min-height: 36.7em;
+  }
+}

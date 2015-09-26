@@ -73,6 +73,11 @@ h1, h2, .banner {
   color: white;
 }
 
+a, button, input, textarea {
+  &:focus {
+    outline: none;
+  }
+}
 .banner {
   display: inline-block;
   background-color: $brand-warning;
@@ -85,6 +90,10 @@ h1, h2, .banner {
 }
 .red{
   color: $red-color;
+}
+
+.black {
+  color: $text-color !important;
 }
 .red-bg{
   background-color: $red-color;
@@ -104,6 +113,10 @@ h1, h2, .banner {
 
 .bold {
   font-weight: 700;
+}
+
+.padding-bottom-nul {
+  padding-bottom: 0 !important;
 }
 
 .spacer {
@@ -172,6 +185,12 @@ h1, h2, .banner {
     background: url("../img/icons/hit.png") no-repeat;
   }
 }
+
+.bottom-shadow {
+  -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
+  -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
+}
 .in-stock{
   display: inline-block;
   text-align: center;
@@ -187,6 +206,9 @@ h1, h2, .banner {
     background: url("../img/icons/icons.png") 0px -88px;
     left: -22px;
     top: 5px;
+    @media only screen and(max-width: $screen-md-min) {
+      top: 0;
+    }
   }
 }
 .counter {

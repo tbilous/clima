@@ -1,15 +1,15 @@
 //BLOCK-2
 //PRODUCTS
 .products-section {
+  padding-top: 4em;
+  padding-bottom: 1.5em;
+  background: url("../img/block-prod-bg.jpg") repeat;
   .product-header-line{
     height: 8px;
     background: url("../img/product-line.png") no-repeat center;
     margin-top: 3em;
     margin-bottom: .6em;
   }
-  padding-top: 4em;
-  padding-bottom: 3em;
-  background: url("../img/block-prod-bg.jpg") repeat;
   .product-header{
     margin-bottom: 3.5em;
   }
@@ -22,17 +22,35 @@
     position: relative;
     max-width: 360px;
     margin: 0 auto 1em;
+    padding-bottom: 3.5em;
   }
   .product-wrapper{
     padding: 0 25px;
+
   }
   .description {
     .product-review {
       margin-top: 3.2em;
       margin-bottom: 5em;
+      &.perfect {
+        margin-top: 2em;
+      }
     }
     &.horizontal{
       max-width: 100%;
+      min-height: 26em;
+      padding-bottom: 2em;
+      margin-bottom: 2em;
+      .product-review {
+        margin-left: 20%;
+        font-size: 1.2em;
+        &.mirror {
+          margin-left: 0;
+        }
+      }
+    }
+    &.mirror-h {
+      min-height: 22em;
     }
   }
   .in-stock{
@@ -55,28 +73,37 @@
   .square, .rectangle {
     box-shadow: 0 0 0 1px red;
   } //TEMP
+
+  .spacer {
+    padding-top: 100%;
+  }
   .square {
     background: url("../img/goods/square.png") no-repeat center;
-    background-size: 100%;
-    .spacer {
-      padding-top: 100%;
-    }
     .numbers {
       top: -14px;
       left: -14px;
     }
   }
   .rectangle {
-    background-size: 100%;
-    .spacer {
-      padding-top: 100%;
-    }
     background: url("../img/goods/rectangle.png") no-repeat center;
     .numbers {
       top: 39px;
       left: -16px;
     }
   }
+  .mirror-img {
+    max-width: 100%;
+    background: url("../img/goods/mirror.jpg") no-repeat center;
+    top: -1px;
+    .numbers {
+      top: -14px;
+      left: -14px;
+    }
+  }
+  .square, .rectangle, .mirror-img {
+    background-size: 100%;
+  }
+
   .product-review, .product-details {
     display: table;
     font-size: .9em;
@@ -84,6 +111,13 @@
   .product-details{
     margin-top: 1em;
     margin-bottom: 1.4em;
+    &.mirror-details {
+      font-size: 1em;
+      margin-top: 0;
+      .product-details-cell:nth-child(even) {
+        padding-left: 6em;
+      }
+    }
   }
   .review-row, .product-details-row {
     display: table-row;
@@ -97,9 +131,6 @@
   .review-cell{
     padding: 15px 0;
   }
-  /*  .delivery-time{
-      font-size: 1.2em;
-    }*/
   .status-block {
     font-size: 1.2em;
     text-align: center;
@@ -125,6 +156,16 @@
     padding: 0;
     height: 3em;
     line-height: 3em;
+  }
+  .ext-review {
+    position: absolute;
+    right: 5px;
+  }
+  .price-head {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 2.2em;
   }
 }
 
