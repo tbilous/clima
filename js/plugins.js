@@ -22,44 +22,31 @@
     }
 }());
 
-/*// Place any jQuery/helper plugins in here.
- // Find all YouTube videos
- var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
- // The element that is fluid width
- $fluidEl = $("body");
-
- // Figure out and save aspect ratio for each video
- $allVideos.each(function () {
-
- $(this)
- .data('aspectRatio', this.height / this.width)
-
- // and remove the hard coded width/height
- .removeAttr('height')
- .removeAttr('width');
-
- });
-
- // When the window is resized
- $(window).resize(function () {
-
- var newWidth = $fluidEl.width();
-
- // Resize all videos according to their own aspect ratio
- $allVideos.each(function () {
-
- var $el = $(this);
- $el
- .width(newWidth)
- .height(newWidth * $el.data('aspectRatio'));
-
- });
-
- // Kick off one resize to fix all videos on page load
- }).resize();*/
 
 $(document).ready(function () {
+//SCROLL TO ANCHOR
+    function scroll_if_anchor(href) {
+        href = typeof(href) == "string" ? href : $(this).attr("href");
+        // You could easily calculate this dynamically if you prefer
+        var fromTop = 50;
+        // If our Href points to a valid, non-empty anchor, and is on the same page (e.g. #foo)
+        // Legacy jQuery and IE7 may have issues: http://stackoverflow.com/q/1593174
+        if (href.indexOf("#") == 0) {
+            var $target = $(href);
+            // Older browser without pushState might flicker here, as they momentarily
+            // jump to the wrong position (IE < 10)
+            if ($target.length) {
+                var time = 1000;
+                $('html, body').animate({scrollTop: $target.offset().top - fromTop}, time);
+                if (history && "pushState" in history) {
+                    history.pushState({}, document.title, window.location.pathname + href);
+                    return false;
+                }
+            }
+        }
+    }
+
+    $("body").on("click", ".anchor", scroll_if_anchor);
 
     $('.navbar-nav a').click(function (e) {
         e.preventDefault();
@@ -74,7 +61,7 @@ $(document).ready(function () {
         show();
         function show() {
             if (i < rows.length) {
-                $(rows[i]).addClass("active").delay(400).queue(function (next) {
+                $(rows[i]).addClass("active").delay(1100).queue(function (next) {
                     $(this).addClass("move");
                     next();
                 });
@@ -106,6 +93,23 @@ $(document).ready(function () {
             lng: lng
         });
     });
+
+    var tomorrow = moment().endOf('day').valueOf() + 1;
+    var now = moment().valueOf();
+    var interval = (tomorrow - now) / 1000;
+    var clock = $('.clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru',
+        showSeconds: false
+    });
+    var clockTop = $('.clock-top').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru',
+        showSeconds: false
+    });
+
 
 
 });

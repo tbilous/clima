@@ -1,0 +1,31 @@
+@import "flipclock.css";
+
+.flip {
+  position: relative;
+  .inn {
+    &::before {
+      content: url("../img/flip/flip-clock-line.png");
+      display: block;
+      position: absolute;
+      bottom: 15px;
+    }
+
+    background-image: url(../img/flip/flip-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.flip::before {
+  content: url("../img/flip/flip-bg.png");
+  position: absolute;
+  left: -2px;
+  top: -3px;
+}
+
+/*.flip::after {
+  content: url("../img/flip/flip-bg.png");
+  position: absolute;
+  left: -5px;
+  top: -6px;
+}*/

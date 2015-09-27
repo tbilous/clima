@@ -67,7 +67,6 @@ h1, .banner {
   color: white;
 }
 
-
 h2 {
   font-size: 1.7em;
   font-weight: 700;
@@ -83,6 +82,7 @@ a, button, input, textarea {
     outline: none;
   }
 }
+
 .banner {
   display: inline-block;
   background-color: $brand-warning;
@@ -93,14 +93,16 @@ a, button, input, textarea {
 .orange {
   color: $orange-color;
 }
-.red{
+
+.red {
   color: $red-color;
 }
 
 .black {
   color: $text-color !important;
 }
-.red-bg{
+
+.red-bg {
   background-color: $red-color;
 }
 
@@ -183,8 +185,9 @@ a, button, input, textarea {
     background-position: -387px 0;
   }
 }
-.hit{
-  &::before{
+
+.hit {
+  &::before {
     content: "";
     position: absolute;
     width: 103px;
@@ -203,6 +206,7 @@ a, button, input, textarea {
   height: 43px;
   margin: 0 auto;
 }
+
 .bottom-shadow {
   -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
   -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
@@ -219,14 +223,15 @@ a, button, input, textarea {
     -webkit-box-shadow: none;
   }
 }
-.in-stock{
+
+.in-stock {
   display: inline-block;
   text-align: center;
   position: relative;
   font-size: 1.2em;
   color: #15cb05;
   font-weight: 700;
-  &::before{
+  &::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -239,7 +244,9 @@ a, button, input, textarea {
     }
   }
 }
+
 .counter {
+  overflow: hidden;
   padding-top: 1em;
   min-height: 380px;
   padding-bottom: 2em;
@@ -278,9 +285,29 @@ a, button, input, textarea {
   .clock-module {
     min-height: 130px;
     min-width: 305px;
-    box-shadow: 0 0 0 1px red; //TEMP
+    //box-shadow: 0 0 0 1px red; //TEMP
     display: inline-block;
     text-align: left;
+    &.clock-top, &.clock {
+      max-width: 305px;
+      min-width: 305px;
+      margin: 1em auto;
+      .hours {
+        .flip-clock-label {
+          right: -72px;
+        }
+      }
+      .minutes {
+        .flip-clock-label {
+          right: -74px;
+        }
+      }
+      .seconds {
+        .flip-clock-label {
+          right: -76px;
+        }
+      }
+    }
   }
   .form-container {
     max-width: 775px;
@@ -309,12 +336,5 @@ a, button, input, textarea {
     .btn-lg, input[type="text"] {
       width: 95%;
     }
-    /*    .clock-module{
-          -webkit-transform: scale(.9);
-          -moz-transform: scale(.9);
-          -ms-transform: scale(.9);
-          -o-transform: scale(.9);
-          transform: scale(.9);
-        }*/
   }
 }

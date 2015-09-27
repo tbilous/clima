@@ -53,6 +53,7 @@
   }
   .work-step {
     &.step-one {
+      cursor: pointer;
       .img-container {
         background: url("../img/howwork/frame10.jpg") no-repeat center;
         background-size: 100%;
