@@ -7,12 +7,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
+<![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {
+        filter: none;
+    }
+</style>
 <![endif]-->
 
 <header class="header" id="home">
@@ -172,6 +180,7 @@
         </div>
     </div>
 </section>
+<!--WAARNING-->
 <div class="warning">
     <div class="container">
         <h2 class="orange">важно!</h2>
@@ -184,12 +193,13 @@
         </div>
     </div>
 </div>
+<!--PRODUCTS-->
 <section class="products-section" id="products">
 
     <!--ЭКОНОМИК-->
     <div class="container">
         <div class="product-header">
-            <h2 class="black">СЕРИЯ ЭКОНОМИК</h2>
+            <h2 class="section-header">СЕРИЯ ЭКОНОМИК</h2>
         </div>
         <div class="row">
             <div class="col-sm-4">
@@ -339,7 +349,7 @@
     <div class="product-header-line"></div>
     <div class="container">
         <div class="product-header">
-            <h2 class="black">СЕРИЯ ТЕРМИКО</h2>
+            <h2 class="section-header">СЕРИЯ ТЕРМИКО</h2>
         </div>
         <div class="row">
             <div class="col-sm-12">
@@ -547,7 +557,7 @@
     <div class="product-header-line"></div>
     <div class="container">
         <div class="product-header">
-            <h2 class="black">СЕРИЯ ПЕРФЕКТ</h2>
+            <h2 class="section-header">СЕРИЯ ПЕРФЕКТ</h2>
         </div>
         <div class="row">
             <div class="col-sm-4">
@@ -702,7 +712,7 @@
     <div class="product-header-line"></div>
     <div class="container">
         <div class="product-header">
-            <h2 class="black">ОБОГРЕВАТЕЛЬ ЗЕРКАЛО</h2>
+            <h2 class="section-header">ОБОГРЕВАТЕЛЬ ЗЕРКАЛО</h2>
         </div>
         <div class="row">
             <div class="col-sm-12">
@@ -913,6 +923,7 @@
     </div>
 
 </section>
+<!--VIDEO-->
 <div class="video-review jumbotron bottom-shadow">
     <div class="container">
         <div class="row">
@@ -938,9 +949,10 @@
         </div>
     </div>
 </div>
+<!--QUERY-->
 <section class="query-section" id="query">
     <div class="container">
-        <h2 class="black">часто задаваемые вопросы</h2>
+        <h2 class="section-header">часто задаваемые вопросы</h2>
 
         <div class="row">
             <div class="col-xs-4">
@@ -1027,15 +1039,16 @@
         </div>
     </div>
 </section>
+<!--QUERYFORM-->
 <div class="query-form">
     <div class="container">
         <div class="qf-wrapper">
-            <h2 class="black">ПОЯВИЛИСЬ ВОПРОСЫ?</h2>
+            <h2 class="section-header">ПОЯВИЛИСЬ ВОПРОСЫ?</h2>
 
             <p class="subheader">Спрашивайте - мы ответим</p>
 
             <div class="row">
-                <div class="col-sm-8"></div>
+                <div class="col-sm-7"></div>
                 <div class="col-sm-4">
                     <div class="form-wrapper">
                         <form id="qform" class="qform">
@@ -1047,17 +1060,246 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-sm-1"></div>
             </div>
 
         </div>
     </div>
 </div>
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<!--WARRANTY-->
+<section class="warranty-section bottom-shadow" id="warranty">
+    <div class="container">
+        <div class="warranty-block">
+            <h2 class="section-header">гарантия</h2>
+
+            <div class="row">
+                <div class="col-xs-11 col-xs-offset-1">
+                    <div class="warranty-wrapper">
+                        <div class="warranty-logo">
+                            <div class="spacer"></div>
+                            <span class="logo-text">Интернет магазин экономного электроотопления</span>
+                        </div>
+                        <div class="warranty-article">
+                            <p>
+                                Все говорят о гарантии— мы ее предоставляем!<br>
+                                <small>(инструкция, гарантийный талон и чек с мокрой печатью)</small>
+                            </p>
+                            <p>
+                                Каждый обогреватель имеет гарантию — 5 лет<br>
+                                <small>Мы уверены в своей продукции (производится с 2009 года)</small>
+                            </p>
+                            <p>
+                                Срок службы панелей отопления от 20 лет
+                            </p>
+                        </div>
+                        <h3 class="orange adress">
+                            официальный представитель завода производителя
+                            Сделано в Украине, г. Кировоград
+                        </h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--HOW WORK-->
+<section class="howwework-section" id="howwework">
+    <div class="container">
+        <h2 class="section-header">как мы работаем</h2>
+
+        <div class="row">
+            <ul class="work-trace">
+                <li class="work-step active animated bounceIn step-one">
+                    <div class="img-container">
+                        <div class="spacer"></div>
+                    </div>
+                    <p class="legend">Вы оставляете заявку</p>
+                </li>
+                <li class="work-step animated fadeInLeft step-two">
+                    <div class="img-container">
+                        <div class="spacer"></div>
+                    </div>
+                    <p class="legend">Наш менеджер перезванивает Вам и уточняет детали</p>
+                </li>
+                <li class="work-step animated fadeInLeft  step-three">
+                    <div class="img-container">
+                        <div class="spacer"></div>
+                    </div>
+                    <p class="legend">Отправляем Ваш заказ первозчиками:<br>
+                        Новая Почта, Интайм или Деливери</p>
+                </li>
+                <li class="work-step animated fadeInLeft step-four">
+                    <div class="img-container">
+                        <div class="spacer"></div>
+                    </div>
+                    <p class="legend">Радуетесь теплу<br>
+                        и уюту в Вашем доме</p>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-wrapper">
+            <a href="#" class="btn btn-lg btn-danger btn-shadow">Оставить заявку</a>
+        </div>
+    </div>
+</section>
+<!--OFFER-->
+<div class="offer-container">
+    <div class="container">
+        <div class="counter top">
+            <div class="counter-header">
+                <h2 class="heading">Акция!</h2>
+
+                <p class="subheader">Покупая Венеция Экономик 750 — <br>
+
+                    терморегулятор Cewal со скидкой 50%
+                    <del class="orange"> 250</del> <span class="orange low-price">  125
+                грн.</span></p>
+            </div>
+            <div class="offer-block text-right">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 ">
+                        <img src="img/top-count-logo.png" alt="12">
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                <span class="clock-module">
+
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <form name="orderform" id="bodyForm">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <input type="hidden" value="Поступила заявка заявка" name="subj">
+                            <input type="text" name="phone" placeholder="Введите телефон">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <input type="text" name="name" placeholder="Введите имя">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <input type="submit" class="btn btn-lg btn-danger form-send" value="Оставить заявку">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEEDBACK-->
+<section class="feedback-section gradient" id="feedback">
+    <div class="container">
+        <h2 class="section-header">отзывы</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="f-block">
+                    <div class="f-body">
+                        <p>«...Ребята, честно говоря, удивили своим профессионализмом. Всё очень понравилось...»</p>
+                    </div>
+                    <div class="f-footer">
+                        <p class="orange f-name">Лариса</p>
+
+                        <p class="f-from">г. Кривой Рог</p>
+                    </div>
+                </div>
+                <div class="f-block">
+                    <div class="f-body">
+                        <p>«До этого у нас был масляный радиатор. электричества накручивал немерено! Спальня маленькая и
+                            его хватало “через чур”. Ночью дышать нечем. Купили панель на 350 Вт, прикрутили на стену и
+                            порядок. Спим спокойно»</p>
+                    </div>
+                    <div class="f-footer">
+                        <p class="orange">Светлана Ковалёва</p>
+
+                        <p>г. Кривой Рог</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="f-block">
+                    <div class="f-body">
+                        <p>«Купил обогреватель. Привезли через 2 дня. Принесли домой большую и тяжёлую коробку, а открыв
+                            увидели тоненький красивый обогреватель. Установили быстро и через несколько часов в большой
+                            комнате значительно потеплело»</p>
+                    </div>
+                    <div class="f-footer">
+                        <p class="orange">Костя Шарапов</p>
+
+                        <p>г. Кривой Рог</p>
+                    </div>
+                </div>
+                <div class="f-block">
+                    <div class="f-body">
+                        <p>«Отличный обогреватель! Заказывали в офис.
+                            Греет на ура. И в интерьер вписался. Нужно и дома поставить»</p>
+                    </div>
+                    <div class="f-footer">
+                        <p class="orange">Александр Шехтер</p>
+
+                        <p>г. Кривой Рог</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn btn-lg btn-danger btn-shadow" href="#">Просмотреть все отзывы</a>
+        </div>
+    </div>
+</section>
+<!--GMAP-->
+<section class="gmap-section" id="gmap">
+    <h2 class="section-header">Как нас найти</h2>
+    <span class="g-marker"></span>
+
+    <h3 class="subheader-gmap text-center">Украина, г. Днепропетровск, пр. Кирова, 97А</h3>
+
+    <div class="map" id="map">
+
+    </div>
+
+</section>
+<!--FOOTER-->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>
+                    <strong class="text-uppercase">Возникли вопросы?</strong><br>
+                    <small class="black">Задайте их нашему менеджеру!</small>
+                </h3>
+
+            </div>
+            <div class="col-sm-4">
+                <a class="btn btn-lg btn-danger btn-shadow text-uppercase" href="#">заказать звонок</a>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="phone-side-block">
+                    <ul>
+                        <li class="kvs">096 893 35 33</li>
+                        <li class="mts">066 061 99 96</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span class="light">Copyright 2015</span> <span class="bold"> Branding elements. </span> <span
+                class="regular"> All Rights Reserved.</span>
+        </div>
+    </div>
+
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="js/vendor/gmaps.min.js"></script>
+
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/plugins.min.js"></script>
+
 <script>
     $('#myTab a').click(function (e) {
         e.preventDefault();

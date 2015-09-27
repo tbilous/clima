@@ -7285,15 +7285,20 @@ body, html {
     }
 }
 
+h1, .banner {
+    font-weight: 700;
+    color: white
+}
+
 h2 {
     font-size: 1.7em;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase
 }
 
-h1, h2, .banner {
-    font-weight: 700;
-    color: white
+h2.section-header {
+    font-size: 2.1em
 }
 
 a:focus, button:focus, input:focus, textarea:focus {
@@ -7357,6 +7362,11 @@ a:focus, button:focus, input:focus, textarea:focus {
     width: 100%
 }
 
+.btn-wrapper {
+    max-width: 385px;
+    margin: 0 auto
+}
+
 .numbers {
     background: url("../img/icons/numbers.png") no-repeat top left;
     width: 55px;
@@ -7409,10 +7419,30 @@ a:focus, button:focus, input:focus, textarea:focus {
     background: url("../img/icons/hit.png") no-repeat
 }
 
+.g-marker {
+    display: block;
+    background: url("../img/icons/icons.png") no-repeat;
+    width: 29px;
+    height: 43px;
+    margin: 0 auto
+}
+
 .bottom-shadow {
     -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.6);
     box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.6)
+}
+
+.btn-shadow {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25)
+}
+
+.btn-shadow:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
 }
 
 .in-stock {
@@ -7791,7 +7821,7 @@ a:focus, button:focus, input:focus, textarea:focus {
 
 .products-section .description .product-review {
     margin-top: 3.2em;
-    margin-bottom: 5em
+    margin-bottom: 1em
 }
 
 .products-section .description .product-review.perfect {
@@ -8126,5 +8156,261 @@ a:focus, button:focus, input:focus, textarea:focus {
 
 .query-form .qform {
     margin-bottom: 4.4em
+}
+
+.warranty-section {
+    padding-top: 2.4em;
+    padding-bottom: 2.7em;
+    position: relative
+}
+
+.warranty-section .warranty-block {
+    background: url("../img/warranty-bg.jpg") no-repeat right center
+}
+
+.warranty-section .warranty-wrapper {
+    margin: 1.3em 0;
+    max-width: 730px
+}
+
+.warranty-section .warranty-logo {
+    position: relative;
+    max-width: 362px;
+    background: url("../img/nav-logo.png") no-repeat 90% top;
+    background-size: 100%
+}
+
+.warranty-section .warranty-logo .spacer {
+    padding-top: 21.4%
+}
+
+.warranty-section .logo-text {
+    position: absolute;
+    text-align: right;
+    font-size: .95em;
+    bottom: 3px;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: 1px
+}
+
+.warranty-section .warranty-article {
+    font-size: 1.5em;
+    line-height: 1.3;
+    margin: .7em 0 3em
+}
+
+.warranty-section .warranty-article p {
+    margin-bottom: .6em
+}
+
+.warranty-section .warranty-article small {
+    font-size: 75%
+}
+
+.warranty-section .adress {
+    font-size: 2em
+}
+
+.howwework-section {
+    padding-top: 2.1em;
+    padding-bottom: 5.5em;
+    background: url("../img/block-prod-bg.jpg") repeat
+}
+
+.howwework-section .work-trace {
+    list-style: none;
+    padding-left: 0;
+    text-align: center
+}
+
+.howwework-section .work-step {
+    display: none;
+    vertical-align: text-top;
+    max-width: 18em;
+    width: 100%;
+    min-height: 35.5em;
+    margin-right: 15px
+}
+
+.howwework-section .work-step:nth-last-child(1) {
+    margin-right: 0
+}
+
+.howwework-section .work-step:nth-last-child(1) .img-container::after {
+    display: none
+}
+
+.howwework-section .work-step.active {
+    display: inline-block
+}
+
+.howwework-section .img-container {
+    position: relative;
+    max-width: 160px;
+    max-height: 160px;
+    margin: 6.8em auto 3em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out
+}
+
+.howwework-section .img-container .spacer {
+    padding-top: 100%
+}
+
+.howwework-section .img-container::after {
+    content: "";
+    position: absolute;
+    right: -5.3em;
+    top: 50%;
+    background: url("../img/icons/icons.png") no-repeat -1px -117px;
+    width: 32px;
+    height: 56px;
+    margin-top: -28px;
+    display: block
+}
+
+.howwework-section .work-step.step-one .img-container {
+    background: url("../img/howwork/frame10.jpg") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-one.move .img-container {
+    background: url("../img/howwork/frame11.png") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-two .img-container {
+    background: url("../img/howwork/frame20.jpg") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-two.move .img-container {
+    background: url("../img/howwork/frame21.png") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-three .img-container {
+    background: url("../img/howwork/frame30.jpg") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-three.move .img-container {
+    background: url("../img/howwork/frame31.png") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-four .img-container {
+    background: url("../img/howwork/frame40.jpg") no-repeat center;
+    background-size: 100%
+}
+
+.howwework-section .work-step.step-four.move .img-container {
+    background: url("../img/howwork/frame41.jpg") no-repeat center;
+    background-size: cover
+}
+
+.howwework-section .legend {
+    font-size: 1.2em
+}
+
+.offer-container {
+    padding-top: 1.5em;
+    padding-bottom: .5em
+}
+
+.feedback-section {
+    padding-top: 2.8em;
+    padding-bottom: 2.8em;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMC4yIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, #ededed 0%, rgba(237, 237, 237, 0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed), color-stop(100%, rgba(237, 237, 237, 0.2)));
+    background: -webkit-linear-gradient(top, #ededed 0%, rgba(237, 237, 237, 0.2) 100%);
+    background: -o-linear-gradient(top, #ededed 0%, rgba(237, 237, 237, 0.2) 100%);
+    background: -ms-linear-gradient(top, #ededed 0%, rgba(237, 237, 237, 0.2) 100%);
+    background: linear-gradient(to bottom, #ededed 0%, rgba(237, 237, 237, 0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#33ededed', GradientType=0)
+}
+
+.feedback-section .section-header {
+    margin-bottom: 2.6em
+}
+
+.feedback-section .f-body {
+    background-color: #fea55e;
+    padding: 1.2em 2.1em;
+    font-size: 1.1em;
+    min-height: 10.7em;
+    line-height: 2
+}
+
+.feedback-section .f-footer {
+    font-size: 1.7em;
+    line-height: .9;
+    padding-top: 1em;
+    padding-bottom: 2em
+}
+
+.gmap-section {
+    padding-top: 1.5em
+}
+
+.gmap-section .subheader-gmap {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0
+}
+
+.gmap-section .g-marker {
+    margin-top: 4.2em
+}
+
+.gmap-section .map {
+    min-height: 30em
+}
+
+.footer {
+    padding-top: 6em;
+    padding-bottom: 1em
+}
+
+.footer h3 {
+    margin: 0
+}
+
+.footer .phone-side-block {
+    max-width: 160px;
+    text-align: right
+}
+
+.footer .phone-side-block ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0
+}
+
+.footer .btn-lg, .footer .btn-group-lg > .btn {
+    margin-top: 5px
+}
+
+.footer .copyright {
+    margin-top: 5em;
+    text-align: center
+}
+
+.footer .copyright.bold {
+    font-family: 'LatoWebBold', sans-serif;
+    font-weight: bold
+}
+
+.footer .copyright.light {
+    font-family: 'LatoWebLight', sans-serif
+}
+
+.footer .copyright.regular {
+    font-family: 'LatoWeb', sans-serif
 }
 /*# sourceMappingURL=styles.min.css.map */

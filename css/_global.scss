@@ -62,15 +62,20 @@ h2 {
   }
 }
 
-h2 {
-  font-size: 1.7em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h1, h2, .banner {
+h1, .banner {
   font-weight: 700;
   color: white;
+}
+
+
+h2 {
+  font-size: 1.7em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  &.section-header {
+    font-size: 2.1em;
+  }
 }
 
 a, button, input, textarea {
@@ -133,6 +138,11 @@ a, button, input, textarea {
   width: 100%;
 }
 
+.btn-wrapper {
+  max-width: 385px;
+  margin: 0 auto;
+}
+
 .numbers {
   background: url('../img/icons/numbers.png') no-repeat top left;
   width: 55px;
@@ -186,10 +196,28 @@ a, button, input, textarea {
   }
 }
 
+.g-marker {
+  display: block;
+  background: url("../img/icons/icons.png") no-repeat;
+  width: 29px;
+  height: 43px;
+  margin: 0 auto;
+}
 .bottom-shadow {
   -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
   -moz-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .6);
+}
+
+.btn-shadow {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+  &:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
 }
 .in-stock{
   display: inline-block;

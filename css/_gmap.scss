@@ -1,0 +1,55 @@
+//BLOCK-9
+.gmap-section {
+  padding-top: 1.5em;
+  .subheader-gmap {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  .g-marker {
+    margin-top: 4.2em;
+  }
+  .map {
+    min-height: 30em;
+  }
+}
+
+//END
+
+//FOOTER
+.footer {
+  h3 {
+    margin: 0;
+  }
+  padding-top: 6em;
+  padding-bottom: 1em;
+  .phone-side-block {
+    max-width: 160px;
+    text-align: right;
+    ul {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
+  .btn-lg {
+    margin-top: 5px;
+  }
+  .copyright {
+    margin-top: 5em;
+    text-align: center;
+    &.bold {
+      font-family: 'LatoWebBold', sans-serif;
+      font-weight: bold;
+    }
+    &.light {
+      font-family: 'LatoWebLight', sans-serif;
+      //font-weight: bold;
+    }
+    &.regular {
+      font-family: 'LatoWeb', sans-serif;
+      //font-weight: bold;
+    }
+
+  }
+}

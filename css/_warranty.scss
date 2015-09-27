@@ -1,0 +1,50 @@
+//BLOCK-6
+//WARRANTY
+.warranty-section {
+  padding-top: 2.4em;
+  padding-bottom: 2.7em;
+  position: relative;
+  .warranty-block {
+    background: url("../img/warranty-bg.jpg") no-repeat right center;
+  }
+  .warranty-wrapper {
+    margin: 1.3em 0;
+    max-width: 730px;
+  }
+  .warranty-logo {
+    position: relative;
+    max-width: 362px;
+    background: url("../img/nav-logo.png") no-repeat 90% top;
+    background-size: 100%;
+    .spacer {
+      padding-top: 21.4%;
+    }
+  }
+  .logo-text {
+    position: absolute;
+    text-align: right;
+    font-size: .95em;
+    bottom: 3px;
+    width: 100%;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .warranty-article {
+    font-size: 1.5em;
+    line-height: 1.3;
+    margin: .7em 0 3em;
+    p {
+      margin-bottom: .6em;
+    }
+    small {
+      font-size: 75%;
+    }
+  }
+  .adress {
+    font-size: 2em;
+  }
+
+}
+
+//END
