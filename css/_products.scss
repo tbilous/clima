@@ -1,6 +1,16 @@
 //BLOCK-2
 //PRODUCTS
 .products-section {
+  //animation
+  .animated {
+    opacity: 0;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    transition: 5s;
+  }
+  //
   padding-top: 4em;
   padding-bottom: 1.5em;
   background: url("../img/block-prod-bg.jpg") repeat;

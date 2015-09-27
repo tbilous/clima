@@ -7446,6 +7446,10 @@ a:focus, button:focus, input:focus, textarea:focus {
     -webkit-box-shadow: none
 }
 
+.animated {
+    opacity: 0
+}
+
 .in-stock {
     display: inline-block;
     text-align: center;
@@ -7715,6 +7719,12 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 .why-section .why-block {
+    opacity: 0;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    transition: 5s;
     min-height: 70px;
     margin-bottom: 1em;
     position: relative;
@@ -7810,6 +7820,15 @@ a:focus, button:focus, input:focus, textarea:focus {
     padding-top: 4em;
     padding-bottom: 1.5em;
     background: url("../img/block-prod-bg.jpg") repeat
+}
+
+.products-section .animated {
+    opacity: 0;
+    -webkit-transition: 5s;
+    -moz-transition: 5s;
+    -ms-transition: 5s;
+    -o-transition: 5s;
+    transition: 5s
 }
 
 .products-section .product-header-line {

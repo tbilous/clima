@@ -224,6 +224,10 @@ a, button, input, textarea {
   }
 }
 
+//ANIMATION
+.animated {
+  opacity: 0;
+}
 .in-stock {
   display: inline-block;
   text-align: center;

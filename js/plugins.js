@@ -24,6 +24,21 @@
 
 
 $(document).ready(function () {
+
+//VISIBLE BLOCK2 ELEMENTS IN WINDOW
+    jQuery('.why-block').viewportChecker({
+        classToAdd: 'fadeInUpBig',
+        offset: 100
+    });
+    jQuery('.warning .animated').viewportChecker({
+        classToAdd: 'flash',
+        offset: 200
+    });
+    jQuery('.products-section .animated').viewportChecker({
+        classToAdd: 'fadeIn',
+        offset: 200
+    });
+
 //SCROLL TO ANCHOR
     function scroll_if_anchor(href) {
         href = typeof(href) == "string" ? href : $(this).attr("href");
@@ -110,6 +125,31 @@ $(document).ready(function () {
         showSeconds: false
     });
 
+//CENTERED MODAL
+    $(".start-modal").click(function () {
+        var d_tar = $(this).attr('data-target');
+        $(d_tar).show();
+        var modal_he = $(d_tar).find('.modal-dialog .modal-content').height();
+        var win_height = $(window).height();
+        var marr = win_height - modal_he;
+        $('.modal-dialog').css('margin-top', marr / 2);
+    });
+
+//SUBMIT FORM
+    $("#offersForm").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            //alert("true offersForm");
+            $('#offersForm').trigger("reset");
+            resetForm('#offersForm');
+        });
+        //$('#orderModal').modal('hide');
+        return false;
+    });
 
 
 });
