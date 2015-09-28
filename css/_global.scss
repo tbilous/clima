@@ -78,8 +78,9 @@ h2 {
 }
 
 a, button, input, textarea {
-  &:focus {
-    outline: none;
+  &:focus,
+  &:active {
+    outline: none !important;
   }
 }
 
@@ -227,6 +228,11 @@ a, button, input, textarea {
 //ANIMATION
 .animated {
   opacity: 0;
+  -webkit-transition: 5s;
+  -moz-transition: 5s;
+  -ms-transition: 5s;
+  -o-transition: 5s;
+  transition: 5s;
 }
 .in-stock {
   display: inline-block;
@@ -289,7 +295,6 @@ a, button, input, textarea {
   .clock-module {
     min-height: 130px;
     min-width: 305px;
-    //box-shadow: 0 0 0 1px red; //TEMP
     display: inline-block;
     text-align: left;
     &.clock-top, &.clock {
