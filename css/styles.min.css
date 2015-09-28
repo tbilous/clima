@@ -6382,7 +6382,8 @@ a:focus, a:active, button:focus, button:active, input:focus, input:active, texta
     bottom: 3px;
     width: 100%;
     font-weight: 300;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    white-space: nowrap
 }
 
 .warranty-section .warranty-article {
@@ -6629,7 +6630,7 @@ a:focus, a:active, button:focus, button:active, input:focus, input:active, texta
     content: url("../img/flip/flip-clock-line.png");
     display: block;
     position: absolute;
-    bottom: 15px
+    bottom: 18px
 }
 
 .flip::before {

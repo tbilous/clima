@@ -63,6 +63,7 @@ $(document).ready(function () {
 
     $("body").on("click", ".anchor", scroll_if_anchor);
 
+//NAVBAR SET ACTIVE NAV
     $('.navbar-nav a').click(function (e) {
         e.preventDefault();
         $('.navbar-nav > li').removeClass('active');
@@ -85,8 +86,8 @@ $(document).ready(function () {
             }
         }
     });
-//MAP
 
+//MAP
     var map;
     var lat = 48.447650;
     var lng = 35.020844;
@@ -109,6 +110,7 @@ $(document).ready(function () {
         });
     });
 
+//CLOCK
     var tomorrow = moment().endOf('day').valueOf() + 1;
     var now = moment().valueOf();
     var interval = (tomorrow - now) / 1000;
@@ -134,9 +136,15 @@ $(document).ready(function () {
         var marr = win_height - modal_he;
         $('.modal-dialog').css('margin-top', marr / 2);
     });
+//RESET FORM
+    function resetForm(formid) {
+        $(':input', formid).not(':button, :submit, :reset, :hidden').val('')
+            .removeAttr('checked').removeAttr('selected');
+    }
 
 //SUBMIT FORM
-    $("#offersForm").submit(function () {
+    //MODAL FORM
+    $("#requestForm").submit(function () {
         $.ajax({
             type: "POST",
             url: "mail.php", //mail script
@@ -144,12 +152,52 @@ $(document).ready(function () {
         }).done(function () {
             $(this).find("input").val("");
             //alert("true offersForm");
-            $('#offersForm').trigger("reset");
-            resetForm('#offersForm');
+            resetForm('#requestForm');
         });
-        //$('#orderModal').modal('hide');
+        $('#orderModal').modal('hide');
         return false;
     });
+//HEADER COUNT FORM
+    $("#headerForm").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            //alert("true headerForm");
+            resetForm('#headerForm');
+        });
+        return false;
+    });
+//Query-block FORM
+    $("#qform").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            //alert("true qform");
+            resetForm('#qform');
+        });
+        return false;
+    });
+//BODY COUNER-FORM
+    $("#bodyForm").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //mail script
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            //alert("true bodyForm");
+            resetForm('#bodyForm');
+        });
+        return false;
+    });
+
+
 
 
 });

@@ -1,14 +1,14 @@
 <?php
 
-$recepient = "chernyakovich.evgeniy@gmail.com";
-$sitename = "Інтер'єр";
+$recepient = "tbilous@gmail.com";
+$sitename = "Climat System Ukraine";
 
 
-$content_rent = trim($_POST["subscribe"]);
+$comment = trim($_POST["comment"]);
 $name = trim($_POST["name"]);
 $email = trim($_POST["email"]);
 $phone = trim($_POST["phone"]);
-$message = "Name: $name \nPhone: $phone \nEmail: $email \nOrder: $content_rent";
+$message = "Name: $name \nPhone: $phone \nEmail: $email\nComment: $comment";
 
-$pagetitle = "New order from \"$sitename\"";
+$pagetitle = "New request from \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");

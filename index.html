@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>clima</title>
+    <title>System Climat Ukraine</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -919,7 +919,7 @@
                             <input type="hidden"/>
                             <input type="text" name="name" required placeholder="Введите имя"/>
                             <input type="text" name="phone" required placeholder="Введите телефон"/>
-                            <textarea rows="5" placeholder="Введите ваш вопрос"></textarea>
+                            <textarea name="comment" rows="5" placeholder="Введите ваш вопрос"></textarea>
                             <input type="submit" class="btn btn-lg btn-warning" value="Задать вопрос"/>
                         </form>
                     </div>
@@ -1165,31 +1165,31 @@
 
             <div class="modal-body">
                 <button type="button" class="close-modal" data-dismiss="modal" aria-hidden="true"><span
-                        class="glyphicon glyphicon-asterisk bold black"
-                        aria-hidden="true"></span>
+                        class="text-uppercase bold black"
+                        aria-hidden="true">x</span>
                 </button>
 
                 <p class="text-center">Заполните форму и мы свяжемся с вами</p>
 
-                <form id="rentForm" class="text-center">
+                <form id="requestForm" class="text-center">
                     <input name="formtitle" type="hidden" value="Order"/>
 
                     <div class="input-group">
                         <input name="name" class="name_input" type="text" required="required"
-                               placeholder="Введите имя">
+                               placeholder="Введите имя"/>
                     </div>
                     <div class="input-group">
                         <input name="phone" class="name_input" type="text" required="required"
-                               placeholder="Введите телефон">
+                               placeholder="Введите телефон"/>
                     </div>
                     <div class="input-group">
                         <input name="email" class="email_input" type="email" required="required"
-                               placeholder="E-Mail">
+                               placeholder="E-Mail"/>
                     </div>
-                    <textarea id="rentinfo" class="invisible hidden-input" name="content_rent"></textarea>
-                    <label for="rentinfo"></label>
+                    <textarea class="invisible hidden-input" name="comment"></textarea>
+                    <label for="comment"></label>
 
-                    <input type="submit" class="btn btn-lg btn-primary">
+                    <input type="submit" class="btn btn-lg btn-primary"/>
 
                 </form>
             </div>
