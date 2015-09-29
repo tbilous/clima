@@ -13,6 +13,7 @@
   }
   .navbar {
     border: none;
+    background: transparent url("../img/query-bg.jpg") repeat;
   }
   .navbar-header {
 
@@ -81,7 +82,7 @@
   top: 0;
   ul{
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 20px;
     list-style: none;
     li{
@@ -100,6 +101,9 @@
       }
       &.mts::before{
         background-position: 0 -53px;
+      }
+      &.lf::before{
+        background-position: 0 -81px;
       }
     }
   }

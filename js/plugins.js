@@ -38,6 +38,32 @@ $(document).ready(function () {
         classToAdd: 'fadeIn',
         offset: 200
     });
+    jQuery('.query').viewportChecker({
+        classToAdd: 'fadeInDownBig',
+        offset: 100
+    });
+    jQuery('.answer .animated').viewportChecker({
+        classToAdd: 'fadeIn',
+        offset: 100
+    });
+    jQuery('.f-block').viewportChecker({
+        classToAdd: 'fadeIn',
+        offset: 100
+    });
+    jQuery('.counter').viewportChecker({
+        classToAdd: 'fadeInDownBig',
+        offset: 100
+    });
+
+    jQuery('.warranty-section').viewportChecker({
+        classToAdd: 'fadeIn',
+        offset: 150
+    });
+
+    jQuery('.query-form').viewportChecker({
+        classToAdd: 'fadeIn',
+        offset: 150
+    });
 
 //SCROLL TO ANCHOR
     function scroll_if_anchor(href) {
@@ -99,7 +125,7 @@ $(document).ready(function () {
             lng: lng,
             zoomControl: false,
             panControl: false,
-            zoom: 17,
+            zoom: 15,
             streetViewControl: false,
             mapTypeControl: false,
             overviewMapControl: false,

@@ -2,7 +2,7 @@
   @media screen and (max-width: $screen-sm-min) {
     font-size: 10px;
   }
-  .close-modal {
+/*  .close-modal {
     border: none;
     background-color: white;
     width: 2em;
@@ -12,17 +12,21 @@
     top: 0;
     left: 0;
     border-radius: 50%;
+  }*/
+  .modal-header{
+    opacity: .8;
+    font-size: 3em;
   }
 
   .modal-content {
-    border-radius: .8em;
+    border-radius: 0;
     padding: 1.5em;
   }
   .modal-body {
-    -webkit-box-shadow: 0 0 0 5px #a9a9a9;
-    -moz-box-shadow: 0 0 0 5px #a9a9a9;
-    box-shadow: 0 0 0 5px #a9a9a9;
-    border-radius: .2em;
+    -webkit-box-shadow: 0 0 0 5px $brand-warning;
+    -moz-box-shadow: 0 0 0 5px $brand-warning;
+    box-shadow: 0 0 0 5px $brand-warning;
+    border-radius: 0;
   }
   .hidden-input {
     width: 0;
@@ -51,6 +55,8 @@
   }
   input[type="submit"] {
     padding: 0;
+    margin-bottom: 3em;
+    margin-top: 3em;
   }
 
   .message {
