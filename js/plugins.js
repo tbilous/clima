@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
     jQuery('.query').viewportChecker({
         classToAdd: 'fadeInDownBig',
-        offset: 100
+        offset: 0
     });
     jQuery('.answer .animated').viewportChecker({
         classToAdd: 'fadeIn',
