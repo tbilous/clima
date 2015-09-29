@@ -71,14 +71,14 @@ $(document).ready(function () {
     });
 
     $('.step-one').click(function () {
-        $(this).addClass("flipInX").addClass('move');
+        $(this).toggleClass("flipInX");
         var i = 0;
         var rows = $(".work-step");
         show();
         function show() {
             if (i < rows.length) {
                 $(rows[i]).addClass("active").delay(1100).queue(function (next) {
-                    $(this).addClass("flipInX").addClass("move");
+                    $(this).toggleClass("flipInX").toggleClass("move");
                     next();
                 });
                 i++;
