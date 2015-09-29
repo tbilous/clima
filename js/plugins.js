@@ -88,9 +88,10 @@ $(document).ready(function () {
     });
 
 //MAP
+    //50.475355, 30.514886
     var map;
-    var lat = 48.447650;
-    var lng = 35.020844;
+    var lat = 50.475355;
+    var lng = 30.514886;
     $(document).ready(function () {
         map = new GMaps({
             el: '#map',

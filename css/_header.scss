@@ -2,6 +2,7 @@
 .header {
   background-position-y: 100%;
   background-position-x: center;
+  padding-top: 5em;
   padding-bottom: 1em;
   @media only screen and(max-width: $screen-sm-min) {
     background-image: url("../img/header-bg-lowres.jpg");
