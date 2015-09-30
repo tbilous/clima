@@ -25,7 +25,7 @@
 
 $(document).ready(function () {
 
-//VISIBLE BLOCK2 ELEMENTS IN WINDOW
+//ANIMATE VLOCKS IN VIEWPORT
     jQuery('.why-block').viewportChecker({
         classToAdd: 'fadeInUpBig',
         offset: 100
@@ -114,7 +114,6 @@ $(document).ready(function () {
     });
 
 //MAP
-    //50.475355, 30.514886
     var map;
     var lat = 50.475355;
     var lng = 30.514886;
