@@ -153,6 +153,7 @@ $(document).ready(function () {
         showSeconds: false
     });
 
+
 //CENTERED MODAL
     $(".start-modal").click(function () {
         var d_tar = $(this).attr('data-target');
@@ -163,17 +164,24 @@ $(document).ready(function () {
         $('.modal-dialog').css('margin-top', marr / 2);
     });
 //RESET FORM
+
+
     function resetForm(formid) {
         $(':input', formid).not(':button, :submit, :reset, :hidden').val('')
             .removeAttr('checked').removeAttr('selected');
     }
+    $(".submit-form").click(function(){
+        var formID = $(this).parent().attr('id');
+        console.log('#'+formID);
+        resetForm('#'+formID)
+    });
 
 //SUBMIT FORM
     //MODAL FORM
-    $("#requestForm").submit(function () {
+/*    $("#requestForm").submit(function () {
         $.ajax({
             type: "POST",
-            url: "mail.php", //mail script
+            url: "zakazz.php", //mail script
             data: $(this).serialize()
         }).done(function () {
             $(this).find("input").val("");
@@ -182,8 +190,9 @@ $(document).ready(function () {
         });
         $('#orderModal').modal('hide');
         return false;
-    });
+    });*/
 //HEADER COUNT FORM
+/*
     $("#headerForm").submit(function () {
         $.ajax({
             type: "POST",
@@ -224,6 +233,7 @@ $(document).ready(function () {
     });
 
 
+*/
 
 
 });
